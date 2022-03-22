@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Nov 18 20:02:54 2021
+# Process ID: 196676
+# Current directory: C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Pruebas/contador/prueba_contador/prueba_contador.runs/impl_1
+# Command line: vivado.exe -log TopContador.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source TopContador.tcl -notrace
+# Log file: C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Pruebas/contador/prueba_contador/prueba_contador.runs/impl_1/TopContador.vdi
+# Journal file: C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Pruebas/contador/prueba_contador/prueba_contador.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source TopContador.tcl -notrace

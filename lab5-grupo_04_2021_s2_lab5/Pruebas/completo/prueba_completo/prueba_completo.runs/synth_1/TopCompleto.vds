@@ -1,0 +1,675 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Nov 19 08:23:47 2021
+# Process ID: 372560
+# Current directory: C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Pruebas/completo/prueba_completo/prueba_completo.runs/synth_1
+# Command line: vivado.exe -log TopCompleto.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopCompleto.tcl
+# Log file: C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Pruebas/completo/prueba_completo/prueba_completo.runs/synth_1/TopCompleto.vds
+# Journal file: C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Pruebas/completo/prueba_completo/prueba_completo.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TopCompleto.tcl -notrace
+Command: synth_design -top TopCompleto -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 371176
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1000.043 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TopCompleto' [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Pruebas/completo/top_completo.v:3]
+	Parameter st_Idle bound to: 0 - type: integer 
+	Parameter st_Presionado bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Completo' [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Completo/completo.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Microprocesador' [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/microprocesador/microprocesador.v:3]
+	Parameter imm_sel_para_tipo_R bound to: 3'b000 
+	Parameter imm_sel_para_tipo_I_A bound to: 3'b000 
+	Parameter imm_sel_para_tipo_I_L bound to: 3'b001 
+	Parameter imm_sel_para_tipo_J bound to: 3'b010 
+	Parameter imm_sel_para_tipo_B bound to: 3'b011 
+	Parameter imm_sel_para_tipo_S bound to: 3'b100 
+	Parameter datoA_es_rs1 bound to: 1'b0 
+	Parameter datoB_es_rs2 bound to: 1'b0 
+	Parameter dato_rd_sel_para_DataIn bound to: 1'b0 
+	Parameter st_Fetch bound to: 0 - type: integer 
+	Parameter st_Decode bound to: 1 - type: integer 
+	Parameter st_Execute bound to: 2 - type: integer 
+	Parameter st_Memory bound to: 3 - type: integer 
+	Parameter st_Writeback bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'UnidadDeControl' [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/microprocesador/unidad_control.v:3]
+	Parameter LW_code bound to: 10'b0100000011 
+	Parameter SW_code bound to: 10'b0100100011 
+	Parameter ADD_code bound to: 17'b00000000000110011 
+	Parameter SUB_code bound to: 17'b01000000000110011 
+	Parameter OR_code bound to: 17'b00000001100110011 
+	Parameter AND_code bound to: 17'b00000001110110011 
+	Parameter ADDI_code bound to: 10'b0000010011 
+	Parameter SLL_code bound to: 17'b00000000010110011 
+	Parameter SRL_code bound to: 17'b00000001010110011 
+	Parameter ORI_code bound to: 10'b1100010011 
+	Parameter ANDI_code bound to: 10'b1110010011 
+	Parameter BEQ_code bound to: 10'b0001100011 
+	Parameter JAL_code bound to: 7'b1101111 
+	Parameter st_Fetch bound to: 0 - type: integer 
+	Parameter st_Decode bound to: 1 - type: integer 
+	Parameter st_Execute bound to: 2 - type: integer 
+	Parameter st_Memory bound to: 3 - type: integer 
+	Parameter st_Writeback bound to: 4 - type: integer 
+	Parameter imm_sel_para_tipo_R bound to: 3'b000 
+	Parameter imm_sel_para_tipo_I_A bound to: 3'b000 
+	Parameter imm_sel_para_tipo_I_L bound to: 3'b001 
+	Parameter imm_sel_para_tipo_J bound to: 3'b010 
+	Parameter imm_sel_para_tipo_B bound to: 3'b011 
+	Parameter imm_sel_para_tipo_S bound to: 3'b100 
+	Parameter datoA_es_rs1 bound to: 1'b0 
+	Parameter datoA_es_pc bound to: 1'b1 
+	Parameter datoB_es_rs2 bound to: 1'b0 
+	Parameter datoB_es_imm bound to: 1'b1 
+	Parameter alu_and bound to: 4'b0000 
+	Parameter alu_or bound to: 4'b0001 
+	Parameter alu_suma bound to: 4'b0010 
+	Parameter alu_resta bound to: 4'b0110 
+	Parameter alu_sll bound to: 4'b1000 
+	Parameter alu_srl bound to: 4'b1001 
+	Parameter dato_rd_sel_para_DataIn bound to: 1'b0 
+	Parameter dato_rd_sel_para_ALUResult bound to: 1'b1 
+	Parameter pc_reset bound to: 2'b00 
+	Parameter pc_hold bound to: 2'b01 
+	Parameter pc_4 bound to: 2'b10 
+	Parameter pc_jump bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'UnidadDeControl' (1#1) [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/microprocesador/unidad_control.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ProgramCounter' [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/microprocesador/PC.v:3]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ProgramCounter' (2#1) [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/microprocesador/PC.v:3]
+INFO: [Synth 8-6157] synthesizing module 'banco_de_registros' [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/microprocesador/banco_de_registros.v:3]
+	Parameter N bound to: 5 - type: integer 
+	Parameter M bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'banco_de_registros' (3#1) [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/microprocesador/banco_de_registros.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/microprocesador/alu.v:3]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'CLA_4bit' [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/microprocesador/adder_cla.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CLA_4bit' (4#1) [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/microprocesador/adder_cla.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/microprocesador/alu.v:3]
+WARNING: [Synth 8-7071] port 'C' of module 'ALU' is unconnected for instance 'alu' [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/microprocesador/microprocesador.v:164]
+WARNING: [Synth 8-7071] port 'Z' of module 'ALU' is unconnected for instance 'alu' [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/microprocesador/microprocesador.v:164]
+WARNING: [Synth 8-7023] instance 'alu' of module 'ALU' has 7 connections declared, but only 5 given [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/microprocesador/microprocesador.v:164]
+INFO: [Synth 8-6155] done synthesizing module 'Microprocesador' (6#1) [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/microprocesador/microprocesador.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ROM_inst' [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Memoria/ROM_inst.v:26]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sprom' [C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8727]
+	Parameter MEMORY_SIZE bound to: 2048 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: auto - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter MEMORY_INIT_FILE bound to: memoria.mem - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: 0 - type: string 
+	Parameter USE_MEM_INIT bound to: 1 - type: integer 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter WAKEUP_TIME bound to: disable_sleep - type: string 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 6 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 0 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: 0 - type: integer 
+	Parameter P_CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter P_ECC_MODE bound to: 0 - type: integer 
+	Parameter P_WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter P_MEMORY_OPTIMIZATION bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 3 - type: integer 
+	Parameter MEMORY_SIZE bound to: 2048 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 0 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: memoria.mem - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: 0 - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 1 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 32 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 32 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 6 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 0 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 32 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 32 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 6 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 0 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: auto - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 32 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 32 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 32 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 32 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 64 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 32 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 32 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 6 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 6 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 6 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 6 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 32 - type: integer 
+	Parameter rstb_loop_iter bound to: 32 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 32 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:488]
+INFO: [Synth 8-3876] $readmem data file 'memoria.mem' is read successfully [C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:1104]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (7#1) [C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sprom' (8#1) [C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8727]
+WARNING: [Synth 8-689] width (33) of port connection 'douta' does not match port width (32) of module 'xpm_memory_sprom' [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Memoria/ROM_inst.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_inst' (9#1) [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Memoria/ROM_inst.v:26]
+WARNING: [Synth 8-689] width (32) of port connection 'douta' does not match port width (33) of module 'ROM_inst' [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Completo/completo.v:53]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (6) of module 'ROM_inst' [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Completo/completo.v:54]
+INFO: [Synth 8-6157] synthesizing module 'RAM_inst' [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Memoria/RAM_inst.v:23]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_spram' [C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8571]
+	Parameter MEMORY_SIZE bound to: 2048 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: auto - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: 0 - type: string 
+	Parameter USE_MEM_INIT bound to: 1 - type: integer 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter WAKEUP_TIME bound to: disable_sleep - type: string 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 32 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 32 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 6 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 0 - type: integer 
+	Parameter WRITE_MODE_A bound to: read_first - type: string 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: 0 - type: integer 
+	Parameter P_CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter P_ECC_MODE bound to: 0 - type: integer 
+	Parameter P_WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter P_WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter P_MEMORY_OPTIMIZATION bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 0 - type: integer 
+	Parameter MEMORY_SIZE bound to: 2048 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 0 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: 0 - type: string 
+	Parameter USE_MEM_INIT_MMI bound to: 0 - type: integer 
+	Parameter USE_MEM_INIT bound to: 1 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_PROTECT bound to: 1 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 32 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 32 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 6 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 0 - type: integer 
+	Parameter WRITE_MODE_A bound to: 1 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 32 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 32 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 6 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 0 - type: integer 
+	Parameter WRITE_MODE_B bound to: 1 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: auto - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 32 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 32 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 32 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 32 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 64 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 32 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 32 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 6 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 6 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 6 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 6 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 32 - type: integer 
+	Parameter rstb_loop_iter bound to: 32 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 32 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:488]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-2] MEMORY_INIT_FILE (none), MEMORY_INIT_PARAM together specify no memory initialization. Initial memory contents will be all 0's.   [C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:490]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (9#1) [C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_spram' (10#1) [C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8571]
+INFO: [Synth 8-6155] done synthesizing module 'RAM_inst' (11#1) [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Memoria/RAM_inst.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'douta' does not match port width (32) of module 'RAM_inst' [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Completo/completo.v:69]
+INFO: [Synth 8-6157] synthesizing module 'visualizacion_led' [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Led/visualizacion_led.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'visualizacion_led' (12#1) [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Led/visualizacion_led.v:3]
+INFO: [Synth 8-6157] synthesizing module 'visual7segmentos' [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/7 segmentos/visual7segmentos.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bin_to_bcd' [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/7 segmentos/bin_to_bcd.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'bin_to_bcd' (13#1) [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/7 segmentos/bin_to_bcd.v:3]
+INFO: [Synth 8-6157] synthesizing module 'InterfazDisplaySieteSegmentos' [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/7 segmentos/interfaz_display_siete_segmentos.v:6]
+	Parameter CYCLES_PER_DISPLAY bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ContadorDelayAjustable' [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/7 segmentos/contador_delay_ajustable.v:3]
+	Parameter DELAY_IN_CYCLES bound to: 1 - type: integer 
+	Parameter COUNTER_WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ContadorDelayAjustable' (14#1) [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/7 segmentos/contador_delay_ajustable.v:3]
+INFO: [Synth 8-6157] synthesizing module 'DecodificadorSieteSegmentos' [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/7 segmentos/decodificador_siete_segmentos.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'DecodificadorSieteSegmentos' (15#1) [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/7 segmentos/decodificador_siete_segmentos.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/7 segmentos/interfaz_display_siete_segmentos.v:35]
+WARNING: [Synth 8-567] referenced signal 'decoder_outputs' should be on the sensitivity list [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/7 segmentos/interfaz_display_siete_segmentos.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'InterfazDisplaySieteSegmentos' (16#1) [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/7 segmentos/interfaz_display_siete_segmentos.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'visual7segmentos' (17#1) [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/7 segmentos/visual7segmentos.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Multiplicador' [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/multiplicador/Multiplicador.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Multiplicador' (18#1) [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/multiplicador/Multiplicador.v:3]
+INFO: [Synth 8-6157] synthesizing module 'offset' [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Offset/offset.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'offset' (19#1) [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Offset/offset.v:3]
+INFO: [Synth 8-6157] synthesizing module 'sensor' [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/sensor/sensor.v:3]
+INFO: [Synth 8-6157] synthesizing module 'xadc_wiz_0' [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/sensor/xadc_wiz_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'XADC' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:82182]
+	Parameter INIT_40 bound to: 16'b0000000000000000 
+	Parameter INIT_41 bound to: 16'b0010000100001111 
+	Parameter INIT_42 bound to: 16'b0000010000000000 
+	Parameter INIT_43 bound to: 16'b0000000000000000 
+	Parameter INIT_44 bound to: 16'b0000000000000000 
+	Parameter INIT_45 bound to: 16'b0000000000000000 
+	Parameter INIT_46 bound to: 16'b0000000000000000 
+	Parameter INIT_47 bound to: 16'b0000000000000000 
+	Parameter INIT_48 bound to: 16'b0000000000000000 
+	Parameter INIT_49 bound to: 16'b1100000011000000 
+	Parameter INIT_4A bound to: 16'b0000000000000000 
+	Parameter INIT_4B bound to: 16'b0000000000000000 
+	Parameter INIT_4C bound to: 16'b0000000000000000 
+	Parameter INIT_4D bound to: 16'b0000000000000000 
+	Parameter INIT_4E bound to: 16'b0000000000000000 
+	Parameter INIT_4F bound to: 16'b0000000000000000 
+	Parameter INIT_50 bound to: 16'b1011010111101101 
+	Parameter INIT_51 bound to: 16'b0101011111100100 
+	Parameter INIT_52 bound to: 16'b1010000101000111 
+	Parameter INIT_53 bound to: 16'b1100101000110011 
+	Parameter INIT_54 bound to: 16'b1010100100111010 
+	Parameter INIT_55 bound to: 16'b0101001011000110 
+	Parameter INIT_56 bound to: 16'b1001010101010101 
+	Parameter INIT_57 bound to: 16'b1010111001001110 
+	Parameter INIT_58 bound to: 16'b0101100110011001 
+	Parameter INIT_59 bound to: 16'b0000000000000000 
+	Parameter INIT_5A bound to: 16'b0000000000000000 
+	Parameter INIT_5B bound to: 16'b0000000000000000 
+	Parameter INIT_5C bound to: 16'b0101000100010001 
+	Parameter INIT_5D bound to: 16'b0000000000000000 
+	Parameter INIT_5E bound to: 16'b0000000000000000 
+	Parameter INIT_5F bound to: 16'b0000000000000000 
+	Parameter IS_CONVSTCLK_INVERTED bound to: 1'b0 
+	Parameter IS_DCLK_INVERTED bound to: 1'b0 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+	Parameter SIM_MONITOR_FILE bound to: design.txt - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'XADC' (20#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:82182]
+INFO: [Synth 8-6155] done synthesizing module 'xadc_wiz_0' (21#1) [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/sensor/xadc_wiz_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'sensor' (22#1) [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/sensor/sensor.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Contador' [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Contador/contador.v:3]
+	Parameter st_Inactivo bound to: 0 - type: integer 
+	Parameter st_LimpiarMSByLSB bound to: 1 - type: integer 
+	Parameter st_LeerSwitches bound to: 2 - type: integer 
+	Parameter st_Contar bound to: 3 - type: integer 
+	Parameter st_PonerMSB bound to: 4 - type: integer 
+	Parameter sw_500ms bound to: 0 - type: integer 
+	Parameter sw_1s bound to: 1 - type: integer 
+	Parameter sw_2s bound to: 2 - type: integer 
+	Parameter sw_4s bound to: 3 - type: integer 
+	Parameter t_500ms bound to: 50000000 - type: integer 
+	Parameter t_1s bound to: 100000000 - type: integer 
+	Parameter t_2s bound to: 200000000 - type: integer 
+	Parameter t_4s bound to: 400000000 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Contador/contador.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'Contador' (23#1) [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Contador/contador.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Completo' (24#1) [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Completo/completo.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'TopCompleto' (25#1) [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Pruebas/completo/top_completo.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1000.043 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1000.043 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1000.043 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1000.043 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Pruebas/completo/cnstr_completo.xdc]
+Finished Parsing XDC File [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Pruebas/completo/cnstr_completo.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Pruebas/completo/cnstr_completo.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TopCompleto_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TopCompleto_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1000.043 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1000.043 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1000.043 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1000.043 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1000.043 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'estado_reg' in module 'UnidadDeControl'
+INFO: [Synth 8-802] inferred FSM for state register 'estado_reg' in module 'Contador'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                st_Fetch |                            00001 |                              000
+               st_Decode |                            00010 |                              001
+              st_Execute |                            00100 |                              010
+               st_Memory |                            01000 |                              011
+            st_Writeback |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'estado_reg' using encoding 'one-hot' in module 'UnidadDeControl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             st_Inactivo |                              000 |                              000
+       st_LimpiarMSByLSB |                              001 |                              001
+         st_LeerSwitches |                              010 |                              010
+               st_Contar |                              011 |                              011
+             st_PonerMSB |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'estado_reg' using encoding 'sequential' in module 'Contador'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1000.043 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 5     
+	   2 Input    2 Bit       Adders := 1     
+	   2 Input    1 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      4 Bit         XORs := 16    
++---Registers : 
+	               64 Bit    Registers := 2     
+	               32 Bit    Registers := 38    
+	               29 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	               2K Bit	(64 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   33 Bit        Muxes := 4     
+	   3 Input   32 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 76    
+	   5 Input   32 Bit        Muxes := 2     
+	   4 Input   29 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   6 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 108   
+	   5 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:18 . Memory (MB): peak = 1121.109 ; gain = 121.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++----------------+------------+---------------+----------------+
+|Module Name     | RTL Object | Depth x Width | Implemented As | 
++----------------+------------+---------------+----------------+
+|xpm_memory_base | p_0_out    | 64x28         | LUT            | 
++----------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:23 ; elapsed = 00:01:24 . Memory (MB): peak = 1121.109 ; gain = 121.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:24 ; elapsed = 00:01:25 . Memory (MB): peak = 1121.109 ; gain = 121.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:26 ; elapsed = 00:01:27 . Memory (MB): peak = 1121.109 ; gain = 121.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin compi_3810:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3811:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3812:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3813:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3814:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3815:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3816:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3817:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3818:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3819:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3820:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3821:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3822:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3823:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3824:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3825:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3826:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3827:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3828:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3829:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3830:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3831:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3832:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3833:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3834:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3835:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3836:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3837:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3838:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3839:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3840:a to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compi_3841:a to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:30 ; elapsed = 00:01:31 . Memory (MB): peak = 1121.109 ; gain = 121.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:30 ; elapsed = 00:01:31 . Memory (MB): peak = 1121.109 ; gain = 121.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:30 ; elapsed = 00:01:31 . Memory (MB): peak = 1121.109 ; gain = 121.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:30 ; elapsed = 00:01:32 . Memory (MB): peak = 1121.109 ; gain = 121.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:30 ; elapsed = 00:01:32 . Memory (MB): peak = 1121.109 ; gain = 121.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:30 ; elapsed = 00:01:32 . Memory (MB): peak = 1121.109 ; gain = 121.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |   405|
+|3     |LUT1   |    98|
+|4     |LUT2   |   723|
+|5     |LUT3   |   628|
+|6     |LUT4   |   563|
+|7     |LUT5   |   509|
+|8     |LUT6   |  1566|
+|9     |MUXF7  |   291|
+|10    |MUXF8  |     7|
+|11    |XADC   |     1|
+|12    |FDRE   |  1398|
+|13    |IBUF   |    23|
+|14    |OBUF   |    28|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:30 ; elapsed = 00:01:32 . Memory (MB): peak = 1121.109 ; gain = 121.066
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 32 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:21 ; elapsed = 00:01:29 . Memory (MB): peak = 1121.109 ; gain = 121.066
+Synthesis Optimization Complete : Time (s): cpu = 00:01:31 ; elapsed = 00:01:32 . Memory (MB): peak = 1121.109 ; gain = 121.066
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.098 . Memory (MB): peak = 1121.109 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 704 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1121.109 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+79 Infos, 40 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:37 ; elapsed = 00:01:40 . Memory (MB): peak = 1121.109 ; gain = 121.066
+INFO: [Common 17-1381] The checkpoint 'C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Pruebas/completo/prueba_completo/prueba_completo.runs/synth_1/TopCompleto.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TopCompleto_utilization_synth.rpt -pb TopCompleto_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 19 08:25:31 2021...

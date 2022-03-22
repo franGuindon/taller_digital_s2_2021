@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Nov 11 12:51:33 2021
+# Process ID: 94388
+# Current directory: C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Pruebas/banco_de_registros_tb/prueba_banco_registros/prueba_banco_registros.runs/synth_1
+# Command line: vivado.exe -log TopBancoDeRegistros.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopBancoDeRegistros.tcl
+# Log file: C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Pruebas/banco_de_registros_tb/prueba_banco_registros/prueba_banco_registros.runs/synth_1/TopBancoDeRegistros.vds
+# Journal file: C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Pruebas/banco_de_registros_tb/prueba_banco_registros/prueba_banco_registros.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TopBancoDeRegistros.tcl -notrace

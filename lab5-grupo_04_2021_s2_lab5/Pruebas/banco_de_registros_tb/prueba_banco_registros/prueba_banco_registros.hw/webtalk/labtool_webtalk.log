@@ -1,0 +1,10 @@
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Pruebas/banco_de_registros_tb/prueba_banco_registros/prueba_banco_registros.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Pruebas/banco_de_registros_tb/prueba_banco_registros/prueba_banco_registros.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Tue Nov  9 11:59:14 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 116.422 ; gain = 17.664
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov  9 11:59:14 2021...

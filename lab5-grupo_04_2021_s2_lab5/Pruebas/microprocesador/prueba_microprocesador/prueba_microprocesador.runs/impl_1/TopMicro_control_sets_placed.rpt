@@ -1,0 +1,118 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Nov 19 07:44:52 2021
+| Host         : LAPTOP-BFI2BQC3 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TopMicro_control_sets_placed.rpt
+| Design       : TopMicro
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    40 |
+|    Minimum number of control sets                        |    40 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    29 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    40 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    38 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              26 |           12 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             212 |           83 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1005 |          411 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------------------------+----------------------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |                 Enable Signal                |               Set/Reset Signal               | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+----------------------------------------------+----------------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG |                                              |                                              |                2 |              2 |         1.00 |
+|  clkdiv_BUFG   | micro/UDC/sw[15]                             | micro/UDC/registro_de_instruccion_reg[8]_1   |                4 |             15 |         3.75 |
+|  clkdiv_BUFG   | micro/UDC/sw[15]                             | micro/UDC/registro_de_instruccion_reg[8]_5   |                8 |             16 |         2.00 |
+|  clkdiv_BUFG   |                                              |                                              |               10 |             24 |         2.40 |
+|  clkdiv_BUFG   | micro/UDC/registro_de_instruccion_reg[8]_6   | micro/UDC/registro_de_instruccion_reg[7]_9   |                8 |             30 |         3.75 |
+|  clkdiv_BUFG   | micro/UDC/registro_de_instruccion_reg[7]_0   | micro/UDC/registro_de_instruccion_reg[7]_12  |               13 |             30 |         2.31 |
+|  clkdiv_BUFG   | micro/UDC/sw[15]_0                           | micro/UDC/registro_de_instruccion_reg[11]_5  |               14 |             31 |         2.21 |
+|  clkdiv_BUFG   | micro/UDC/registro_de_instruccion_reg[7]     | micro/UDC/registro_de_instruccion_reg[8]_8   |               11 |             31 |         2.82 |
+|  clkdiv_BUFG   | micro/UDC/registro_de_instruccion_reg[7]_1   | micro/UDC/registro_de_instruccion_reg[10]_6  |                9 |             31 |         3.44 |
+|  clkdiv_BUFG   | micro/UDC/registro_de_instruccion_reg[10]    | micro/UDC/registro_de_instruccion_reg[8]_11  |                8 |             31 |         3.88 |
+|  clkdiv_BUFG   | micro/UDC/registro_de_instruccion_reg[10]_0  | micro/UDC/registro_de_instruccion_reg[7]_14  |               16 |             31 |         1.94 |
+|  clkdiv_BUFG   | micro/UDC/registro_de_instruccion_reg[10]_1  | micro/UDC/registro_de_instruccion_reg[7]_13  |               17 |             31 |         1.82 |
+|  clkdiv_BUFG   | micro/UDC/registro_de_instruccion_reg[8]_2   | micro/UDC/registro_de_instruccion_reg[10]_10 |               14 |             31 |         2.21 |
+|  clkdiv_BUFG   | micro/UDC/registro_de_instruccion_reg[8]_3   | micro/UDC/registro_de_instruccion_reg[10]_9  |               20 |             31 |         1.55 |
+|  clkdiv_BUFG   | micro/UDC/registro_de_instruccion_reg[11]_1  | micro/UDC/registro_de_instruccion_reg[9]_4   |               17 |             31 |         1.82 |
+|  clkdiv_BUFG   | micro/UDC/registro_de_instruccion_reg[10]_3  | micro/UDC/registro_de_instruccion_reg[7]_5   |               13 |             31 |         2.38 |
+|  clkdiv_BUFG   | micro/UDC/sw[15]_1                           | micro/UDC/registro_de_instruccion_reg[10]_5  |               11 |             31 |         2.82 |
+|  clkdiv_BUFG   | micro/UDC/registro_de_instruccion_reg[7]_2   | micro/UDC/registro_de_instruccion_reg[8]_4   |                8 |             31 |         3.88 |
+|  clkdiv_BUFG   | micro/UDC/registro_de_instruccion_reg[7]_3   | micro/UDC/registro_de_instruccion_reg[10]_4  |               21 |             31 |         1.48 |
+|  clkdiv_BUFG   | micro/UDC/registro_de_instruccion_reg[10]_2  | micro/UDC/registro_de_instruccion_reg[7]_6   |               10 |             31 |         3.10 |
+|  clk_IBUF_BUFG | estado[0]                                    |                                              |                8 |             32 |         4.00 |
+|  clkdiv_BUFG   | micro/UDC/FSM_onehot_estado_reg[1]_1         | micro/registro_resultado_mem[31]_i_1_n_0     |               13 |             32 |         2.46 |
+|  clkdiv_BUFG   | micro/UDC/registro_de_instruccion_reg[10]_11 | micro/UDC/sw[15]_2                           |               17 |             32 |         1.88 |
+|  clkdiv_BUFG   | micro/UDC/registro_de_instruccion_reg[10]_12 | micro/UDC/registro_de_instruccion_reg[7]_4   |               11 |             32 |         2.91 |
+|  clkdiv_BUFG   | micro/UDC/registro_de_instruccion_reg[9]_9   | micro/UDC/registro_de_instruccion_reg[8]_9   |               17 |             32 |         1.88 |
+|  clkdiv_BUFG   | micro/UDC/registro_de_instruccion_reg[11]_4  | micro/UDC/registro_de_instruccion_reg[9]_5   |               13 |             32 |         2.46 |
+|  clkdiv_BUFG   | micro/UDC/registro_de_instruccion_reg[8]_10  | micro/UDC/registro_de_instruccion_reg[9]_10  |                8 |             32 |         4.00 |
+|  clkdiv_BUFG   | micro/UDC/registro_de_instruccion_reg[11]_0  | micro/UDC/registro_de_instruccion_reg[7]_7   |               23 |             32 |         1.39 |
+|  clkdiv_BUFG   | micro/UDC/registro_de_instruccion_reg[9]     | micro/UDC/registro_de_instruccion_reg[7]_17  |                9 |             32 |         3.56 |
+|  clkdiv_BUFG   | micro/UDC/registro_de_instruccion_reg[8]_0   | micro/UDC/registro_de_instruccion_reg[9]_3   |               12 |             32 |         2.67 |
+|  clkdiv_BUFG   | micro/UDC/registro_de_instruccion_reg[10]_8  | micro/UDC/registro_de_instruccion_reg[10]_7  |               11 |             32 |         2.91 |
+|  clkdiv_BUFG   | micro/UDC/registro_de_instruccion_reg[8]     | micro/UDC/registro_de_instruccion_reg[9]_11  |               10 |             32 |         3.20 |
+|  clkdiv_BUFG   | micro/UDC/registro_de_instruccion_reg[11]    | micro/UDC/registro_de_instruccion_reg[7]_8   |               19 |             32 |         1.68 |
+|  clkdiv_BUFG   | micro/UDC/registro_de_instruccion_reg[7]_18  | micro/UDC/sw[15]_3                           |                9 |             32 |         3.56 |
+|  clkdiv_BUFG   | micro/UDC/registro_de_instruccion_reg[8]_13  | micro/UDC/registro_de_instruccion_reg[8]_12  |                7 |             32 |         4.57 |
+|  clkdiv_BUFG   | micro/UDC/FSM_onehot_estado_reg[4]_1[0]      |                                              |               12 |             32 |         2.67 |
+|  clkdiv_BUFG   | micro/UDC/registro_de_instruccion_reg[7]_11  | micro/UDC/registro_de_instruccion_reg[7]_10  |               10 |             32 |         3.20 |
+|  clkdiv_BUFG   | micro/UDC/FSM_onehot_estado_reg[1]_0         |                                              |               14 |             36 |         2.57 |
+|  clkdiv_BUFG   | micro/UDC/FSM_onehot_estado_reg[1]_2[0]      |                                              |               30 |             48 |         1.60 |
+|  clkdiv_BUFG   | micro/UDC/E[0]                               |                                              |               19 |             64 |         3.37 |
++----------------+----------------------------------------------+----------------------------------------------+------------------+----------------+--------------+
+
+

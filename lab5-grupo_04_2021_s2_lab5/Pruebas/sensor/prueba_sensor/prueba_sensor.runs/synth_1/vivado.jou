@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Nov 18 17:40:02 2021
+# Process ID: 156696
+# Current directory: C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Pruebas/sensor/prueba_sensor/prueba_sensor.runs/synth_1
+# Command line: vivado.exe -log TopSensor.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopSensor.tcl
+# Log file: C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Pruebas/sensor/prueba_sensor/prueba_sensor.runs/synth_1/TopSensor.vds
+# Journal file: C:/Users/fbadi/OneDrive/Documents/taller_digital/lab5-grupo_04_2021_s2_lab5/Pruebas/sensor/prueba_sensor/prueba_sensor.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TopSensor.tcl -notrace

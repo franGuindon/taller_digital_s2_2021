@@ -1,0 +1,122 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Nov 19 08:26:13 2021
+| Host         : LAPTOP-BFI2BQC3 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TopCompleto_control_sets_placed.rpt
+| Design       : TopCompleto
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    44 |
+|    Minimum number of control sets                        |    44 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    18 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    44 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    42 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              13 |            6 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              32 |            8 |
+| Yes          | No                    | No                     |            1002 |          468 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             351 |          159 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+------------------------------------------------+-----------------------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |                  Enable Signal                 |                Set/Reset Signal               | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+------------------------------------------------+-----------------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG |                                                |                                               |                1 |              1 |         1.00 |
+|  clkdiv_BUFG   |                                                |                                               |                5 |             12 |         2.40 |
+|  clkdiv_BUFG   | comp/adc/inst/E[0]                             |                                               |                6 |             16 |         2.67 |
+|  clkdiv_BUFG   | comp/LEDS/reg_led0/i__n_0                      |                                               |                7 |             16 |         2.29 |
+|  clkdiv_BUFG   | comp/cnt/control[31]_i_2_n_0                   | comp/cnt/control[31]_i_1_n_0                  |               10 |             31 |         3.10 |
+|  clk_IBUF_BUFG |                                                | clear                                         |                8 |             32 |         4.00 |
+|  clkdiv_BUFG   | comp/cnt/estado__0[2]                          |                                               |                8 |             32 |         4.00 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[9]_10  |                                               |               12 |             32 |         2.67 |
+|  clkdiv_BUFG   | comp/MP/UDC/FSM_onehot_estado_reg[1]_1[0]      |                                               |                8 |             32 |         4.00 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[11]_1  |                                               |               21 |             32 |         1.52 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[9]_17  | comp/MP/UDC/registro_de_instruccion_reg[9]_4  |               14 |             32 |         2.29 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[8]_0   |                                               |                8 |             32 |         4.00 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[9]_8   |                                               |                9 |             32 |         3.56 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[8]_2   |                                               |               17 |             32 |         1.88 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[9]_14  | comp/MP/UDC/registro_de_instruccion_reg[9]_1  |               15 |             32 |         2.13 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[10]_0  | comp/MP/UDC/registro_de_instruccion_reg[10]   |               20 |             32 |         1.60 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[10]_7  |                                               |               19 |             32 |         1.68 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[9]_12  | comp/MP/UDC/registro_de_instruccion_reg[9]    |               13 |             32 |         2.46 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[11]_0  |                                               |               17 |             32 |         1.88 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[10]_2  | comp/MP/UDC/registro_de_instruccion_reg[10]_1 |               13 |             32 |         2.46 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[9]_11  |                                               |               21 |             32 |         1.52 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[8]_1   |                                               |               18 |             32 |         1.78 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[9]_15  | comp/MP/UDC/registro_de_instruccion_reg[9]_2  |               12 |             32 |         2.67 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[10]_8  |                                               |               21 |             32 |         1.52 |
+|  clkdiv_BUFG   | comp/MP/UDC/FSM_onehot_estado_reg[4]_1[0]      |                                               |                9 |             32 |         3.56 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[10]_6  |                                               |               18 |             32 |         1.78 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[8]_4   | comp/MP/UDC/registro_de_instruccion_reg[8]    |               12 |             32 |         2.67 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[9]_9   |                                               |                7 |             32 |         4.57 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[10]_9  |                                               |               15 |             32 |         2.13 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[11]    |                                               |               22 |             32 |         1.45 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[8]_3   |                                               |               14 |             32 |         2.29 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[7]     |                                               |               17 |             32 |         1.88 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[10]_10 |                                               |               21 |             32 |         1.52 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[9]_16  | comp/MP/UDC/registro_de_instruccion_reg[9]_3  |               21 |             32 |         1.52 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[9]_5   |                                               |               22 |             32 |         1.45 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[10]_4  | comp/MP/UDC/registro_de_instruccion_reg[10]_3 |               16 |             32 |         2.00 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[10]_5  |                                               |               15 |             32 |         2.13 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[9]_7   |                                               |               17 |             32 |         1.88 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[9]_6   |                                               |               17 |             32 |         1.88 |
+|  clkdiv_BUFG   | comp/MP/UDC/registro_de_instruccion_reg[9]_13  | comp/MP/UDC/registro_de_instruccion_reg[9]_0  |               13 |             32 |         2.46 |
+|  clkdiv_BUFG   | comp/SIETE_SEGS/binario0/i__n_0                |                                               |               15 |             34 |         2.27 |
+|  clkdiv_BUFG   | comp/MP/UDC/FSM_onehot_estado_reg[1]_0         |                                               |               12 |             40 |         3.33 |
+|  clkdiv_BUFG   | comp/MP/UDC/E[0]                               |                                               |               16 |             64 |         4.00 |
+|  clkdiv_BUFG   | comp/MP/UDC/FSM_onehot_estado_reg[1]_2[0]      |                                               |               39 |             64 |         1.64 |
++----------------+------------------------------------------------+-----------------------------------------------+------------------+----------------+--------------+
+
+

@@ -1,0 +1,38 @@
+
+# Control
+set_property PACKAGE_PIN U3 [get_ports {contr_PMOD_led[3]}]
+   set_property IOSTANDARD LVCMOS33 [get_ports {contr_PMOD_led[3]}]
+set_property PACKAGE_PIN W3 [get_ports {contr_PMOD_led[2]}]
+   set_property IOSTANDARD LVCMOS33 [get_ports {contr_PMOD_led[2]}]
+set_property PACKAGE_PIN V3 [get_ports {contr_PMOD_led[1]}]
+   set_property IOSTANDARD LVCMOS33 [get_ports {contr_PMOD_led[1]}]
+set_property PACKAGE_PIN V13 [get_ports {contr_PMOD_led[0]}]
+   set_property IOSTANDARD LVCMOS33 [get_ports {contr_PMOD_led[0]}]
+
+# Data
+set_property PACKAGE_PIN U16 [get_ports {PMOD_led[0]}]
+   set_property IOSTANDARD LVCMOS33 [get_ports {PMOD_led[0]}]
+set_property PACKAGE_PIN E19 [get_ports {PMOD_led[1]}]
+   set_property IOSTANDARD LVCMOS33 [get_ports {PMOD_led[1]}]
+set_property PACKAGE_PIN U19 [get_ports {PMOD_led[2]}]
+   set_property IOSTANDARD LVCMOS33 [get_ports {PMOD_led[2]}]
+set_property PACKAGE_PIN V19 [get_ports {PMOD_led[3]}]
+   set_property IOSTANDARD LVCMOS33 [get_ports {PMOD_led[3]}]
+set_property PACKAGE_PIN W18 [get_ports {PMOD_led[4]}]
+   set_property IOSTANDARD LVCMOS33 [get_ports {PMOD_led[4]}]
+set_property PACKAGE_PIN U15 [get_ports {PMOD_led[5]}]
+   set_property IOSTANDARD LVCMOS33 [get_ports {PMOD_led[5]}]
+set_property PACKAGE_PIN U14 [get_ports {PMOD_led[6]}]
+   set_property IOSTANDARD LVCMOS33 [get_ports {PMOD_led[6]}]
+set_property PACKAGE_PIN V14 [get_ports {PMOD_led[7]}]
+   set_property IOSTANDARD LVCMOS33 [get_ports {PMOD_led[7]}]
+
+# Extra
+set_property PACKAGE_PIN P3 [get_ports {extra_led[3]}]
+   set_property IOSTANDARD LVCMOS33 [get_ports {extra_led[3]}]
+set_property PACKAGE_PIN N3 [get_ports {extra_led[2]}]
+   set_property IOSTANDARD LVCMOS33 [get_ports {extra_led[2]}]
+set_property PACKAGE_PIN P1 [get_ports {extra_led[1]}]
+   set_property IOSTANDARD LVCMOS33 [get_ports {extra_led[1]}]
+set_property PACKAGE_PIN L1 [get_ports {extra_led[0]}]
+   set_property IOSTANDARD LVCMOS33 [get_ports {extra_led[0]}]

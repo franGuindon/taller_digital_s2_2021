@@ -1,0 +1,8 @@
+//num_a_in, num_b_in, push, check_num_a_out, check_num_b_out, check_ALU_control
+
+0 0 00000 0 0 0
+A B 00001 A B 2
+2 E 00010 2 E 6
+F B 00100 F B 0
+D 4 01000 D 4 1
+C 0 10000 C 0 A
